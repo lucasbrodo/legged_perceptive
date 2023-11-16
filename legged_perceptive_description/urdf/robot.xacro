@@ -19,12 +19,16 @@
     </xacro:sensor_t265>
 
 
-    <xacro:mid360 name="livox_right" parent="base">
+    <!-- <xacro:mid360 name="livox_right" parent="base">
         <origin xyz="0.365 -0.068 -0.030" rpy="-2.59 1.03 3.09"/>
     </xacro:mid360>
 
     <xacro:mid360 name="livox_left" parent="base">
         <origin xyz="0.365 0.068 -0.030" rpy="2.59 1.03 -3.09"/>
-    </xacro:mid360>
+    </xacro:mid360> -->
+
+    <xacro:sensor_d435 name="rs_front" topics_ns="rs_front" parent="base">
+        <origin rpy="0.0 0.1 0.0" xyz="0.35 0 0.1"/>
+    </xacro:sensor_d435>
 
 </robot>
